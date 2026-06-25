@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        
+        <div id="ladoIzquierdo">
+            <div id="overlay"></div>
+        </div>
+
+        
+        <div id = "panelDerecho">
+            
+            <!-- pantalla inicial -->
+            <div id="bienvenida">
+                <div id="cabecera">
+                    <div id="logo">
+                        <img src="assets/logo.png">
+                    </div>
+                    <p>tu espacio para crear</p>
+                </div>
+                <div id="acciones">
+                    <button class="botonMorado cambioLogin">iniciar sesion</button>
+                    <button class="crearCuenta cambioRegistro">Crear Cuenta</button>
+                    <p>tus datos estan protegidos</p>
+                </div>
+            </div>
+            
+            <!-- pantalla de login -->
+            <div id="login">
+                <div class="titulo">
+                    <h1 class="TituloPrincipal"> Bienvenido de nuevo</h1>
+                    <h2 class="TituloSecundario"> inicia sesion para continuar</h2>
+                </div>
+                
+                <div class="cambioPagina">
+                    <div>
+                        <button class="opcionActiva ">Iniciar Sesion</button>
+                        <button class="opcionInactiva cambioRegistro">crearCuenta</button>
+                    </div>
+                </div>
+                
+                <form class="formulario" id="formulario1">
+                    <label for="correo">Correo Electronico</label>
+                    <input type="text" name="correo" id="email" placeholder="tu@email.com">
+                    <label for="contraseña"> contraseña</label>
+                    <input type="text" name="contraseña" id="contraseña" placeholder="*******">
+                    <div id="checkbox">
+                        <label class="recordarme">
+                            <input type="checkbox" name="recordarUsuario" id="recordarUsuario" checked>
+                            Recordarme
+                        </label>
+                        <a href="">¿olvidaste tu contraseña?</a>
+                    </div>
+                </form>
+                
+                <div class="acciones formularios">
+                    <button type="submit" class="botonMorado loginBoton" form="formulario1"> Iniciar Sesion</button>
+                </div>
+                
+                <div class="separador">
+                    <div class="linea"></div>
+                    <span>o continúa con</span>    
+                    <div class="linea"></div>                    
+                </div>
+            
+                <div class="sociales">
+                     <button class="social">
+                        <img src="assets/google.png">
+                    </button>
+                    <button class="social">
+                        <img src="assets/gitHUb.png">
+                    </button>
+                    <button class="social">
+                        <img src="assets/microsoft.png">
+                    </button>
+                </div>
+                
+            </div>
+
+            <!-- pantalla de registro -->
+            <div id ="registro" class="pantalla">
+                
+                <div class="titulo">
+                    <h1 class="TituloPrincipal"> Crear Cuenta</h1>
+                    <h2 class="TituloSecundario">Unete a DevSpace hoy mismo</h2>
+                </div>
+                
+                <div class="cambioPagina">
+                    <div>
+                        <button class="opcionActiva cambioLogin">Iniciar Sesion</button>
+                        <button class="opcionInactiva">crearCuenta</button>
+                    </div>
+                </div>
+
+                <form class="formulario" id="formulario2">
+                    <label for="nombre"> Nombre completo</label>
+                    <input type="text" name="nombre" placeholder="Tu nombre completo" id="crearUsuario">
+                    <label for="correo">Correo Electronico</label>
+                    <input type="text" name="correo" placeholder="tu@email.com" id="crearCorreo">
+                    <label for="contraseña"> contraseña</label>
+                    <input type="password" name="contraseña" placeholder="*******" id="crearContraseña">
+                    <label for="confirmar">Confirmar contraseña</label>
+                    <input type="password" name="confirmar" placeholder="*******">
+                </form>
+                
+                <div id="validacionContraseña">
+                    <p id="longitud">❌ Mínimo 8 caracteres</p>
+                    <p id="mayuscula">❌ Una mayúscula</p>
+                    <p id="numero">❌ Un número</p>
+                    <p id="especial">❌ Un carácter especial</p>
+                </div>
+
+                <div class="acciones formularios">
+                <button type="submit" class="botonMorado loginBoton" form="formulario2"> Crear Cuenta</button>
+                </div>
+
+            </div>
+        
+        </div> 
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
