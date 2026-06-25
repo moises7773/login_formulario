@@ -1,4 +1,4 @@
-<img width="1917" height="932" alt="image" src="https://github.com/user-attachments/assets/b25d3adb-5170-45aa-b71d-b34bc018ec0f" />
+
 # DevSpace Login UI
 
 Una interfaz moderna de inicio de sesión y registro desarrollada únicamente con HTML, CSS y JavaScript puro.
